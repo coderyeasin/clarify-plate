@@ -150,7 +150,7 @@ import {
 import { TableElement } from '@/components/plate-ui/table-element';
 import { TableRowElement } from '@/components/plate-ui/table-row-element';
 import { TodoListElement } from '@/components/plate-ui/todo-list-element';
-import { withDraggables } from '@/components/plate-ui/with-draggables';
+// import { withDraggables } from '@/components/plate-ui/with-draggables';
 import { TabbableElement } from '@/components/plate/tabbable-element';
 
 const resetBlockTypesCommonRule = {
@@ -357,7 +357,7 @@ export const plugins = createPlugins(
     createJuicePlugin(),
   ],
   {
-    components: withDraggables(
+    components:  
       withPlaceholders({
         [ELEMENT_BLOCKQUOTE]: BlockquoteElement,
         [ELEMENT_CODE_BLOCK]: CodeBlockElement,
@@ -395,6 +395,5 @@ export const plugins = createPlugins(
         [MARK_UNDERLINE]: withProps(PlateLeaf, { as: 'u' }),
         [MARK_COMMENT]: CommentLeaf,
       })
-    ),
   }
 );

@@ -45,7 +45,7 @@ export function FixedToolbarButtons() {
         {!readOnly && (
           <>
             <ToolbarGroup noSeparator>
-              <InsertDropdownMenu />
+              {/* <InsertDropdownMenu /> */}
               <TurnIntoDropdownMenu />
             </ToolbarGroup>
 
@@ -74,7 +74,7 @@ export function FixedToolbarButtons() {
               </MarkToolbarButton>
             </ToolbarGroup>
 
-            <ToolbarGroup>
+            {/* <ToolbarGroup>
               <ColorDropdownMenu nodeType={MARK_COLOR} tooltip="Text Color">
                 <Icons.color className={iconVariants({ variant: 'toolbar' })} />
               </ColorDropdownMenu>
@@ -84,7 +84,7 @@ export function FixedToolbarButtons() {
               >
                 <Icons.bg className={iconVariants({ variant: 'toolbar' })} />
               </ColorDropdownMenu>
-            </ToolbarGroup>
+            </ToolbarGroup> */}
 
             <ToolbarGroup>
               <AlignDropdownMenu />
@@ -107,17 +107,17 @@ export function FixedToolbarButtons() {
 
               <EmojiDropdownMenu />
 
-              <MoreDropdownMenu />
+              {/* <MoreDropdownMenu /> */}
             </ToolbarGroup>
           </>
         )}
 
         <div className="grow" />
-
+{/* 
         <ToolbarGroup noSeparator>
           <CommentToolbarButton />
           <ModeDropdownMenu />
-        </ToolbarGroup>
+        </ToolbarGroup> */}
       </div>
     </div>
   );

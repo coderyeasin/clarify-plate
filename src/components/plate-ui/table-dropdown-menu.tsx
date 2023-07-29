@@ -112,7 +112,7 @@ export function TableDropdownMenu(props: DropdownMenuProps) {
         </DropdownMenuSub>
 
         <DropdownMenuSub>
-          <DropdownMenuSubTrigger disabled={!tableSelected}>
+          <DropdownMenuSubTrigger disabled={!tableSelected} >
             <Icons.row className={iconVariants({ variant: 'menuItem' })} />
             <span>Row</span>
           </DropdownMenuSubTrigger>

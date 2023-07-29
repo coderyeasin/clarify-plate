@@ -56,7 +56,7 @@ export function ModeDropdownMenu(props: DropdownMenuProps) {
         </ToolbarButton>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="start" className="min-w-[180px]">
+      <DropdownMenuContent align="start" className="min-w-[180px]" asChild>
         <DropdownMenuRadioGroup
           className="flex flex-col gap-0.5"
           value={value}

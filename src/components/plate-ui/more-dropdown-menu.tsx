@@ -33,6 +33,7 @@ export function MoreDropdownMenu(props: DropdownMenuProps) {
       <DropdownMenuContent
         align="start"
         className="flex max-h-[500px] min-w-[180px] flex-col gap-0.5 overflow-y-auto"
+        asChild
       >
         <DropdownMenuItem
           onSelect={() => {
